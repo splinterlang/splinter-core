@@ -5,6 +5,14 @@ splinter-core
 
 Core of the Splinter language.
 
+goals
+=====
+
+* simplicity
+* modularity
+* safety
+* educational
+
 milestones
 ==========
 
