@@ -13,6 +13,11 @@ goals
 * safety
 * educational
 
+definitions
+===========
+
+* cell - traditionally called an LVALUE in C. something that can be assgined to
+
 milestones
 ==========
 
@@ -25,6 +30,7 @@ V0
 * Monomorphic
 * Static Types
 * Type Inference
+* Stateful function notation
 
 V1
 --
@@ -50,6 +56,11 @@ annoying bits
 =============
 
 * assignment l-values
+* references are AST nodes. references to references are bad.
+* ref :: Cell -> Ptr
+* deref :: Ptr -> Cell
 * namespacing
 * dots (.)
-* 
+* indexing
+* Cells get injected into the type system
+  * Funny things happen because of this
