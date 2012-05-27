@@ -1,0 +1,11 @@
+module Data.Days
+  exports Days(..)
+
+type Days
+  shape Monday
+  shape Tuesday
+  shape Wednesday
+  shape Thursday
+  shape Friday
+  shape Saturday
+  shape Sunday

@@ -1,0 +1,16 @@
+module Data.Ref
+  imports Data.Ptr,
+          Data.Cell
+  exports Ref,
+          mkRef,
+          unRef
+
+type Ref a
+  shape Ref
+    cell :: Cell a
+
+sig mkRef :: (Cell a) -> Ref a
+def mkRef = __implementation__
+
+sig unRef :: (Ref a) -> Cell a
+def unRef = __implementation__

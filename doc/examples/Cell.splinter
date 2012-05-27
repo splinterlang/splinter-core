@@ -1,0 +1,4 @@
+module Data.Cell
+  exports Cell
+
+type Cell a

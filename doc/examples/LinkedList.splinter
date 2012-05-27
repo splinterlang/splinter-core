@@ -1,0 +1,37 @@
+module Data.LinkedList:
+  imports: Data.Ref,
+           Data.Cell
+  exports: LinkedList(..)
+
+--  typedef enum {
+--    LinkedList_Node,
+--    LinkedList_Empty
+--  } LinkedList_Value_t;
+--
+--  typedef struct {
+--    void * this;
+--    LinkedList_t * next;
+--  } LinkedList_Node_t;
+--
+--  typedef struct {
+--    LinkedList_Value_t value;
+--    union {
+--      LinkedList_Node_t node;
+--    } data;
+--  } LinkedList_t;
+
+type LinkedList a:
+  value Node:
+    this :: Ref a
+    next :: Ref (LinkedList a)
+  value Empty:
+
+sig empty :: LinkedList a
+def empty():
+  return Empty
+
+sig append :: (Cell (LinkedList a), a) -> ()
+def append(list, v):
+  case get(list):
+    when Empty:
+    when Node { this as t, next as n }
