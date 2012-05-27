@@ -1,0 +1,8 @@
+module TestModule:
+  imports Foo
+  imports Bar, Baz, Boop(fizz), Bap(buzz,booz)
+  exports TestModule
+  exports bazoo,
+          Foo(bap),
+          Boink(bonk, bip)
+  exports Meep(..)

@@ -5,3 +5,6 @@ cabal-dev
 *.chi
 *.chs.h
 .vim
+.*.swp
+.swp
+tags
